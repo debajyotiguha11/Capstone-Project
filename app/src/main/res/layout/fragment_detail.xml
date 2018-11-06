@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.debjyoti.goalgator.DetailFragment">
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="@string/cancel"
+            android:contentDescription="@string/cont_desc_cancel"/>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:text="@string/save"
+            android:contentDescription="@string/cont_desc_save"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_detail"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/banner_padding">
+
+            <EditText
+                android:id="@+id/goal_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:contentDescription="@string/cont_desc_title"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/by" />
+
+            <EditText
+                android:id="@+id/goal_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:contentDescription="@string/cont_desc_dateSetter"
+                 />
+            <CheckBox
+                android:id="@+id/add_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_calendar"
+                android:contentDescription="@string/cont_desc_calendarBox"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/milestones" />
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_milestone"
+                android:contentDescription="@string/cont_desc_addMilestone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/milestone_graph"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/cont_desc_graphs"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/milestone_list"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:contentDescription="@string/cont_desc_milestones"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

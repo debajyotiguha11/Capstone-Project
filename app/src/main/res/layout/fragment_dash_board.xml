@@ -1,0 +1,51 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.debjyoti.goalgator.DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/banner_padding">
+
+        <TextView
+            android:id="@+id/todo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/todo_label" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/todo_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/cont_desc_todoView"/>
+
+        <TextView
+            android:id="@+id/current_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_label" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/current_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/cont_desc_graphs"/>
+
+        <TextView
+            android:id="@+id/past_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/past_label" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/past_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/cont_desc_graphs"/>
+
+    </LinearLayout>
+
+</ScrollView>
