@@ -99,6 +99,8 @@
     <string name="cont_desc_freq">Number of day you want to do the task per week</string>
     <string name="cont_desc_concurrent">Check if you would like to work towards a milestone at the same time as others in this goal</string>
     <string name="cont_desc_delete_milestone">remove this milestone from the goal</string>
+    <string name="_100">100%</string>
+    <string name="s100">-100%</string>
 
 
 </resources>
