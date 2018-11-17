@@ -14,10 +14,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("keystore.jks")
-            storePassword System.getenv("abc123abc")
+            storeFile file('keystore.jks')
+            storePassword 'abc123abc'
             keyAlias "keystore"
-            keyPassword System.getenv("abc123abc")
+            keyPassword 'abc123abc'
         }
     }
 
